@@ -206,7 +206,6 @@ function bindEscKey() {
   document.addEventListener('keydown', (event) =>{
     if(event.key == 'Escape'){
       router.navigate('home', false);
-      //false or true
     }
   })
 }
