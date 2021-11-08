@@ -76,14 +76,13 @@ export class Router {
     let hash;
 
     if(page == 'home'){
-     hash = "";
+     hash = '';
     }
     else{
       hash ='#' + page;
     }
 
     if(!statePopped && window.location.hash != hash){
-      //console.log(window.location.href + hash);
       history.pushState(page, '', window.location.href + hash);
     }
 
